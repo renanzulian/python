@@ -9,5 +9,7 @@ print("Your number is", number)
 
 if number == secret_number:
     print("Congrats you are right")
+elif number > secret_number:
+    print("The secret number is biggest")
 else:
-    print("Sorry you are wrong")
+    print("The secret number is smallest")
