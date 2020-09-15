@@ -6,7 +6,7 @@ secret_number = 12
 
 while True:
     number = int(input("Input your number: "))
-    print("Your number is", number)
+    print("Your number is  {}".format(number))
 
     if number == secret_number:
         print("Congrats you are right")
@@ -15,3 +15,4 @@ while True:
         print("The secret number is biggest")
     else:
         print("The secret number is smallest")
+
