@@ -15,6 +15,9 @@ def print_hi(name):
     tu = tuple(li)
     li = list(tu)
 
+    five_nones = [None]*5
+    another_five_nones = [None for _ in range(5)]
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
