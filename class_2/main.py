@@ -11,6 +11,10 @@ def print_hi(name):
     for letter in word:
         print(letter)
 
+    li = [1, 2, 3, 4, 5]
+    tu = tuple(li)
+    li = list(tu)
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
