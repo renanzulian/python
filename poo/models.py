@@ -30,5 +30,11 @@ class Person:
         return self.__weight
 
 
-p = Person("Renan", datetime(1996, 6, 4), "123456789", 1.87, 86.513)
-print(p.name)
+class Developer(Person):
+    def __init__(self, name: str, date_of_birth: datetime, document: str, height: float, weight: float, language: str):
+        Person.__init__(self, name, date_of_birth, document, height, weight)
+        self.language = language
+
+
+d = Developer("Renan", datetime.now(), "123456789", 1.87, 86.5, "Python")
+print(d.language)
