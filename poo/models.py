@@ -29,6 +29,9 @@ class Person:
     def weight(self):
         return self.__weight
 
+    def __str__(self):
+        return f"{self.name} - {self.__document}"
+
 
 class Developer(Person):
     def __init__(self, name: str, date_of_birth: datetime, document: str, height: float, weight: float, language: str):
@@ -37,4 +40,4 @@ class Developer(Person):
 
 
 d = Developer("Renan", datetime.now(), "123456789", 1.87, 86.5, "Python")
-print(d.language)
+print(d)
